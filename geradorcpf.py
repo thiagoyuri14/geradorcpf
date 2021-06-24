@@ -27,14 +27,11 @@ class Ui_MainWindow(object):
         self.pushButtongerar.setGeometry(QtCore.QRect(170, 260, 75, 23))
         self.pushButtongerar.setStyleSheet("background-color: rgb(188, 188, 188);")
         self.pushButtongerar.setObjectName("pushButtongerar")
-        self.textEdit = QtWidgets.QTextEdit(self.frame)
-        self.textEdit.setGeometry(QtCore.QRect(230, 110, 104, 41))
-        self.textEdit.setObjectName("textEdit")
         self.lineEdit = QtWidgets.QLineEdit(self.frame)
         self.lineEdit.setGeometry(QtCore.QRect(162, 170, 241, 41))
         self.lineEdit.setObjectName("lineEdit")
         self.radioButton = QtWidgets.QRadioButton(self.frame)
-        self.radioButton.setGeometry(QtCore.QRect(160, 220, 82, 17))
+        self.radioButton.setGeometry(QtCore.QRect(170, 220, 82, 17))
         self.radioButton.setObjectName("radioButton")
         self.radioButton_2 = QtWidgets.QRadioButton(self.frame)
         self.radioButton_2.setGeometry(QtCore.QRect(330, 220, 82, 17))
@@ -47,6 +44,14 @@ class Ui_MainWindow(object):
         self.pushButton_2.setGeometry(QtCore.QRect(420, 180, 75, 23))
         self.pushButton_2.setStyleSheet("background-color: rgb(188, 188, 188);")
         self.pushButton_2.setObjectName("pushButton_2")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(250, 100, 81, 41))
+        font = QtGui.QFont()
+        font.setPointSize(24)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -58,15 +63,11 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Gerador CPF"))
         self.pushButtongerar.setText(_translate("MainWindow", "Gerar"))
-        self.textEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; font-weight:600;\">CPF</span></p></body></html>"))
         self.radioButton.setText(_translate("MainWindow", "Com Ponto"))
         self.radioButton_2.setText(_translate("MainWindow", "Sem Ponto"))
         self.pushButton.setText(_translate("MainWindow", "Limpar"))
         self.pushButton_2.setText(_translate("MainWindow", "Copiar"))
+        self.label.setText(_translate("MainWindow", "CPF"))
 
 
 if __name__ == "__main__":
